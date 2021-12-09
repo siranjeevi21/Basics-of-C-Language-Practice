@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+struct Student{
+    char name[50];
+    char major[50];
+    int age;
+    double gpa;
+};
+
+
+int main() {
+   struct Student student1;
+   student1.age = 22;
+   student1.gpa = 7.31;
+   strcpy(student1.name, "Jeevi");
+   strcpy(student1.major, "Business");
+   
+   struct Student student2;
+   student2.age = 22;
+   student2.gpa = 8.00;
+   strcpy(student2.name, "Siran");
+   strcpy(student2.major, "B.Tech");
+   
+   printf("%s\n", student1.name);
+   printf("%f\n", student1.gpa);
+   
+   printf("%s\n", student2.name);
+   printf("%f\n", student2.gpa);
